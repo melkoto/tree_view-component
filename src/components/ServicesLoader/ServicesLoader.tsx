@@ -1,10 +1,9 @@
-// ServicesLoader.tsx
-import React, { useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { ServiceNode } from '../../types.ts'
 import { ErrorMessage } from '../Error'
 import { TreeView } from '../TreeView'
 
-export const ServicesLoader: React.FC = () => {
+export const ServicesLoader: FC = () => {
   const [data, setData] = useState<ServiceNode[]>([])
   const [error, setError] = useState<string | null>(null)
 
