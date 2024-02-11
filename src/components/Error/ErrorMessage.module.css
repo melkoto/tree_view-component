@@ -16,25 +16,10 @@
 }
 
 .error-message p {
-    margin-top: 10px;
-}
-
-.retry-button,
-.home-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    margin: 10px 0;
 }
 
 .retry-button {
     background-color: #4CAF50; /* Зеленый */
-    color: white;
-}
-
-.home-button {
-    background-color: #008CBA; /* Синий */
     color: white;
 }

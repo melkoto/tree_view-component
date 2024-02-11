@@ -1,7 +1,9 @@
 import { FC, useMemo } from 'react'
-import { TreeNode } from './TreeNode.tsx'
-import { Node, ServiceNode } from './types.ts'
-import { buildTree } from '../utils/build-tree.ts'
+import { Node, ServiceNode } from '../../types.ts'
+import { buildTree } from '../../utils/build-tree.ts'
+import { TreeNode } from '../TreeNode'
+
+import styles from './TreeView.module.css'
 
 interface TreeViewProps {
   data: Node[]
@@ -11,7 +13,7 @@ export const TreeView: FC<TreeViewProps> = ({ data }) => {
   const tree = useMemo(() => buildTree(data as ServiceNode[]), [data])
 
   return (
-    <div>
+    <div className={styles['tree-view']}>
       {tree.map((node) => (
         <TreeNode key={node.id} node={node} />
       ))}

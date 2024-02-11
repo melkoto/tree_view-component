@@ -1,4 +1,4 @@
-import { ServiceNode } from '../components/types.ts'
+import { ServiceNode } from '../types.ts'
 
 /**
  * Строит древовидную структуру из массива объектов ServiceNode.

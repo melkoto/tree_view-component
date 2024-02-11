@@ -1,5 +1,6 @@
 import { FC, memo } from 'react'
-import { Node } from './types.ts'
+import { Node } from '../../types.ts'
+import styles from './TreeNode.module.css'
 
 interface TreeNodeProps {
   node: Node
@@ -7,7 +8,7 @@ interface TreeNodeProps {
 
 const TreeNodeComponent: FC<TreeNodeProps> = ({ node }) => {
   return (
-    <div style={{ marginLeft: '20px' }}>
+    <div className={styles['tree-node']}>
       {node.name} ({node.price})
       {node.children?.map((childNode) => <TreeNode key={childNode.id} node={childNode} />)}
     </div>

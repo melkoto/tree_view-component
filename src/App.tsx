@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { ServiceNode } from './components/types'
+import { ServiceNode } from './types.ts'
+import { ErrorMessage } from './components/Error'
 import { TreeView } from './components/TreeView'
-import ErrorMessage from './components/Error/ErrorMessage.tsx'
 
 function App() {
   const [data, setData] = useState<ServiceNode[]>([])
