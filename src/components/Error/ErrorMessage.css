@@ -1,0 +1,41 @@
+/* ErrorMessage.css */
+.error-message {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #ffdddd;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-message h2 {
+    color: darkred;
+}
+
+.error-message p {
+    margin-top: 10px;
+}
+
+.retry-button,
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.retry-button {
+    background-color: #4CAF50; /* Зеленый */
+    color: white;
+}
+
+.home-button {
+    background-color: #008CBA; /* Синий */
+    color: white;
+}
