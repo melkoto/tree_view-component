@@ -2,3 +2,16 @@
     margin-left: 20px;
     cursor: pointer;
 }
+
+.nodeWithChildren {
+    cursor: pointer;
+}
+
+.leafNode {
+    color: #767272;
+    cursor: default;
+}
+
+.children {
+    margin-left: 20px;
+}
