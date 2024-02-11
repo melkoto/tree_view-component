@@ -8,11 +8,11 @@ interface ErrorMessageProps {
 
 export const ErrorMessage: React.FC<ErrorMessageProps> = ({ message, onRetry }) => {
   return (
-    <div className={styles['error-message']}>
+    <div className={styles.errorMessage}>
       <h2>Упс! Что-то пошло не так...</h2>
       <p>{message}</p>
       {onRetry && (
-        <button onClick={onRetry} className={styles['retry-button']}>
+        <button onClick={onRetry} className={styles.retryButton}>
           Попробовать снова
         </button>
       )}

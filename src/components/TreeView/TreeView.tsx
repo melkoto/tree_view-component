@@ -13,7 +13,7 @@ export const TreeView: FC<TreeViewProps> = ({ data }) => {
   const tree = useMemo(() => buildTree(data as ServiceNode[]), [data])
 
   return (
-    <div className={styles['tree-view']}>
+    <div className={styles.treeView}>
       {tree.map((node) => (
         <TreeNode key={node.id} node={node} />
       ))}

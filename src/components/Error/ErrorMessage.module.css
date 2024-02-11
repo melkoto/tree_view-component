@@ -1,4 +1,4 @@
-.error-message {
+.errorMessage {
     margin: 20px;
     padding: 20px;
     border: 1px solid red;
@@ -11,15 +11,15 @@
     justify-content: center;
 }
 
-.error-message h2 {
+.errorMessage h2 {
     color: darkred;
 }
 
-.error-message p {
+.errorMessage p {
     margin: 10px 0;
 }
 
-.retry-button {
+.retryButton {
     background-color: #4CAF50; /* Зеленый */
     color: white;
 }

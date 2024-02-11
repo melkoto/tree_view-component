@@ -8,7 +8,7 @@ interface TreeNodeProps {
 
 const TreeNodeComponent: FC<TreeNodeProps> = ({ node }) => {
   return (
-    <div className={styles['tree-node']}>
+    <div className={styles.treeNode}>
       {node.name} ({node.price})
       {node.children?.map((childNode) => <TreeNode key={childNode.id} node={childNode} />)}
     </div>
