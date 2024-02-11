@@ -10,10 +10,13 @@ function App() {
   const getServices = async () => {
     try {
       const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/services`)
+
       if (!response.ok) {
         throw new Error('Ошибка запроса')
       }
+
       const data: ServiceNode[] = await response.json()
+
       setData(data)
       setError(null)
     } catch (error) {
