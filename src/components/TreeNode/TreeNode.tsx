@@ -1,5 +1,7 @@
 import { FC, memo, useState } from 'react'
+
 import { Node } from '../../types.ts'
+
 import styles from './TreeNode.module.css'
 
 interface TreeNodeProps {

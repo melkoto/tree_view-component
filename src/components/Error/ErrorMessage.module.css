@@ -1,25 +1,25 @@
 .errorMessage {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid red;
-    border-radius: 5px;
-    background-color: #ffdddd;
-    color: red;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #ffdddd;
+  color: red;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .errorMessage h2 {
-    color: darkred;
+  color: darkred;
 }
 
 .errorMessage p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .retryButton {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }

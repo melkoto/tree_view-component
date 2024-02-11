@@ -1,17 +1,17 @@
 .treeNode {
-    margin-left: 20px;
-    cursor: pointer;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .nodeWithChildren {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .leafNode {
-    color: #767272;
-    cursor: default;
+  color: #767272;
+  cursor: default;
 }
 
 .children {
-    margin-left: 20px;
+  margin-left: 20px;
 }

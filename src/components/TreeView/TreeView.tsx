@@ -1,7 +1,8 @@
 import { FC, useMemo } from 'react'
+
 import { Node, ServiceNode } from '../../types.ts'
-import { buildTree } from '../../utils/build-tree.ts'
 import { TreeNode } from '../TreeNode'
+import { buildTree } from '../../utils'
 
 import styles from './TreeView.module.css'
 
