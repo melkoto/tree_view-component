@@ -16,7 +16,7 @@ function App() {
         setData(data)
         console.log({ data })
       } catch (error) {
-        console.error('Ошибка при загрузке пользователей:', error)
+        console.error('Ошибка при загрузке данных:', error)
       }
     }
 

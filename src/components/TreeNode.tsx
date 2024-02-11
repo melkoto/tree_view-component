@@ -1,11 +1,11 @@
-import React from 'react'
+import { FC, memo } from 'react'
 import { Node } from './types.ts'
 
 interface TreeNodeProps {
   node: Node
 }
 
-const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
+const TreeNodeComponent: FC<TreeNodeProps> = ({ node }) => {
   return (
     <div style={{ marginLeft: '20px' }}>
       {node.name} ({node.price})
@@ -14,4 +14,4 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({ node }) => {
   )
 }
 
-export const TreeNode = React.memo(TreeNodeComponent)
+export const TreeNode = memo(TreeNodeComponent)

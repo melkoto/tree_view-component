@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { FC, useMemo } from 'react'
 import { TreeNode } from './TreeNode.tsx'
 import { Node, ServiceNode } from './types.ts'
 import { buildTree } from '../utils/build-tree.ts'
@@ -7,7 +7,7 @@ interface TreeViewProps {
   data: Node[]
 }
 
-export const TreeView: React.FC<TreeViewProps> = ({ data }) => {
+export const TreeView: FC<TreeViewProps> = ({ data }) => {
   const tree = useMemo(() => buildTree(data as ServiceNode[]), [data])
 
   return (
