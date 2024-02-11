@@ -1,4 +1,4 @@
-import { FC, memo } from 'react'
+import { FC, memo, useState } from 'react'
 import { Node } from '../../types.ts'
 import styles from './TreeNode.module.css'
 
@@ -7,10 +7,21 @@ interface TreeNodeProps {
 }
 
 const TreeNodeComponent: FC<TreeNodeProps> = ({ node }) => {
+  const [isCollapsed, setIsCollapsed] = useState(node.isCollapsed)
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed)
+  }
+
   return (
     <div className={styles.treeNode}>
-      {node.name} ({node.price})
-      {node.children?.map((childNode) => <TreeNode key={childNode.id} node={childNode} />)}
+      <div onClick={toggleCollapse}>
+        {node.name} ({node.price})
+      </div>
+      {!isCollapsed &&
+        node.children?.map((childNode) => (
+          <TreeNodeComponent key={childNode.id} node={childNode} />
+        ))}
     </div>
   )
 }

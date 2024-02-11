@@ -3,6 +3,7 @@ export interface Node {
   name: string
   price: number
   children?: Node[]
+  isCollapsed?: boolean
 }
 
 export interface ServiceNode {
