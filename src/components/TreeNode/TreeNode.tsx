@@ -16,7 +16,7 @@ const TreeNodeComponent: FC<TreeNodeProps> = ({ node }) => {
   return (
     <div className={styles.treeNode}>
       <div onClick={toggleCollapse}>
-        {node.name} ({node.price})
+        {node.name} {Number(node.price) > 0 ? `(${node.price} руб.)` : ''}
       </div>
       {!isCollapsed &&
         node.children?.map((childNode) => (
